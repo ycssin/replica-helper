@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <label>اسم إنسان:</label>
+            <span id="human-name"></span>
+            <button onclick="copyToClipboard('human-name')">نسخ</button>
+        </div>
+        <div class="row">
+            <label>حيوان:</label>
+            <span id="animal"></span>
+            <button onclick="copyToClipboard('animal')">نسخ</button>
+        </div>
+        <div class="row">
+            <label>نبات:</label>
+            <span id="plant"></span>
+            <button onclick="copyToClipboard('plant')">نسخ</button>
+        </div>
+        <div class="row">
+            <label>جماد:</label>
+            <span id="object"></span>
+            <button onclick="copyToClipboard('object')">نسخ</button>
+        </div>
+        <div class="row">
+            <label>دولة:</label>
+            <span id="country"></span>
+            <button onclick="copyToClipboard('country')">نسخ</button>
+        </div>
+        <div class="row">
+            <input type="text" id="input-letter" maxlength="1" placeholder="أدخل حرفاً" onkeyup="updateResults()">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
